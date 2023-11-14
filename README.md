@@ -1,3 +1,3 @@
-# STAR
+# AICV
 
 A Multi-modal LLM
