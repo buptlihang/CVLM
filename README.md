@@ -1,3 +1,3 @@
-# AICV
+# CVLM
 
 A Multi-modal LLM
