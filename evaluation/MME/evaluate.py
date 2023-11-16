@@ -121,6 +121,7 @@ def eval_model(args):
     data_loader = create_data_loader(questions, args.image_folder, tokenizer,
                                      image_processor, model.config)
     pred_results = defaultdict(list)
+    fw = open("evaluation/MME/answer.txt", "w")
     for (input_ids, image_tensor), line in tqdm(zip(data_loader, questions),
                                                 total=len(questions)):
         idx = line["question_id"]
@@ -159,6 +160,14 @@ def eval_model(args):
         category = idx.split('/')[0]
         file = idx.split('/')[-1].split(".")[0] + ".txt"
         pred_results[category].append((file, cur_prompt, outputs))
+
+        fw.write(
+            json.dumps({
+                "question_id": idx,
+                "prompt": cur_prompt,
+                "answer": outputs
+            }) + "\n")
+    fw.close()
 
     GT = get_gt(args.image_folder)
     for category, cate_tups in pred_results.items():
