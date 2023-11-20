@@ -17,7 +17,7 @@ bash scripts/evaluation_mme.sh $model_path $image_path
 
 ```
 
-2023-11-18: CVLM has achieved 1636.46 perception score (No.1), 448.93 cognition score(No.2), and 2125.39 points in total (No.1).  
+2023-11-18: CVLM has achieved 1636.46 perception score (No.1), 448.93 cognition score(No.2), and 2125.39 points in total (No.1). Please refer to [MME](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation)  
 
 
 ## Acknowledgement
