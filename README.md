@@ -29,5 +29,5 @@ bash scripts/evaluation_mme.sh $model_path $image_path
 
 
 Copyright © 2023 CVLM  
-CVLM team members: apolloluo gonglujin buptlihang yjhhdr zrczrczrc zonefv AndyDu0116 mineh810  etc.
+CVLM team members: apolloluo gonglujin buptlihang yjhhdr zrczrczrc uazx000 zonefv AndyDu0116 mineh810  etc.
 
