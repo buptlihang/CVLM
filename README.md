@@ -17,6 +17,9 @@ bash scripts/evaluation_mme.sh $model_path $image_path
 
 ```
 
+2023-11-18: CVLM has achieved 1636.46 perception score (No.1), 448.93 cognition score(No.2), and 2125.39 points in total (No.1).  
+
+
 ## Acknowledgement
 
 [CLIP](https://github.com/openai/CLIP)  
